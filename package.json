@@ -1,7 +1,7 @@
 {
   "name": "team-treehouse-unit-testing-introduction",
   "version": "1.0.0",
-  "description": "",
+  "description": "Introduction to BDD and unit testing using Mocha and Chai",
   "main": "app.js",
   "scripts": {
     "test": "mocha"
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/missalana00/team-treehouse-unit-testing-introduction/issues"
   },
-  "homepage": "https://github.com/missalana00/team-treehouse-unit-testing-introduction#readme"
+  "homepage": "https://github.com/missalana00/team-treehouse-unit-testing-introduction#readme",
+  "devDependencies": {
+    "chai": "^4.1.2"
+  }
 }
