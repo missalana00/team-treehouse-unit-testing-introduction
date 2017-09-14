@@ -1,0 +1,19 @@
+{
+  "name": "team-treehouse-unit-testing-introduction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/missalana00/team-treehouse-unit-testing-introduction.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/missalana00/team-treehouse-unit-testing-introduction/issues"
+  },
+  "homepage": "https://github.com/missalana00/team-treehouse-unit-testing-introduction#readme"
+}
