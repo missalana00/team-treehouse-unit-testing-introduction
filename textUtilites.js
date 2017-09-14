@@ -14,10 +14,23 @@ var expect = require('chai').expect;
 // Will obviously fail because true does not equal false
 // to run test run node textUtilities.js in terminal 
 // corrected:
-expect(true).to.be.true;
+// expect(true).to.be.true;
 
 function titleCase (title) {
-    return title;
+    var words = title.split(' ');
+    var titleCasedWords = words.map(function (word) {
+        return word[0].toUpperCase() + word.substring(1);
+    });
+
+    return titleCasedWords.join(' ');
 };
 
 expect(titleCase('the great mouse detective')).to.be.a('string');
+
+expect(titleCase('a')).to.equal('A');
+
+expect(titleCase('vertigo')).to.equal('Vertigo');
+
+// In testing, the most comprehensive test of the function should be written last; 
+// all simpler tests it can be broken down into should come first 
+expect(titleCase('the great mouse detective')).to.equal('The Great Mouse Detective');
