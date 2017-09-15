@@ -10,8 +10,10 @@ function checkForShip (player, coordinates) {
 
         if (!shipPresent) {
             return false;
+        } else {
+            return true;
         }
     }
 };
     
-module.exports.checkForShip = checkForShip;
+module.exports = checkForShip;
