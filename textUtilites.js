@@ -34,3 +34,7 @@ expect(titleCase('vertigo')).to.equal('Vertigo');
 // In testing, the most comprehensive test of the function should be written last; 
 // all simpler tests it can be broken down into should come first 
 expect(titleCase('the great mouse detective')).to.equal('The Great Mouse Detective');
+
+// Notes:
+// Learned how to set up mocha in package.json by running npm init; now we just have to run 
+// npm test in terminal to run all the tests in the test directory
