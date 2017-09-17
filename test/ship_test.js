@@ -129,4 +129,12 @@ describe('fire', function () {
 // it started
 // Mocha's after() and afterEach() hooks work exactly like before() and beforeEach(), 
 // except that they happen after
-// If you find yourself depending heavily on the teardown phase, you should double-check that you’re testing the right kind of function//
+// If you find yourself depending heavily on the teardown phase, you should double-check 
+// that you’re testing the right kind of function 
+
+// Covering Edge Cases:
+// An edge case is a radical situation your function might end up in, but it isn’t how your 
+// function would normally work
+// Edge cases occur at an extreme (maximum or minimum) operating parameter
+// Predicting edge cases can be challenging
+// Spend a little time thinking about the edge cases that are most likely to come up
