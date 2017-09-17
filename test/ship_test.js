@@ -98,6 +98,13 @@ describe('fire', function () {
         };
     });
 
+    after(function() {
+        console.log('Entire test suite completed');
+    });
+
+    afterEach(function () {
+        console.log('One unit test completed');
+    });
 
     it('should record damage on the given players ship at a given coordinate', function () {
        
@@ -113,3 +120,13 @@ describe('fire', function () {
         expect(player.ships[0].damage).to.be.empty;
     });
 });
+
+
+// Teardown: 
+// Mocha provides a "teardown" phase to remove unwanted variables
+// If your tests change your development environment, like creating a pretend database, 
+// or start up a local server, you can use the teardown block to set your system back to where 
+// it started
+// Mocha's after() and afterEach() hooks work exactly like before() and beforeEach(), 
+// except that they happen after
+// If you find yourself depending heavily on the teardown phase, you should double-check that you’re testing the right kind of function//
